@@ -432,13 +432,13 @@ public class Croller extends View {
         if (!isEnabled)
             return false;
 
-        if (Utils.getDistance(e.getX(), e.getY(), midx, midy) > Math.max(mainCircleRadius, Math.max(backCircleRadius, progressRadius))) {
-            if (startEventSent && mCrollerChangeListener != null) {
-                mCrollerChangeListener.onStopTrackingTouch(this);
-                startEventSent = false;
-            }
-            return super.onTouchEvent(e);
-        }
+//         if (Utils.getDistance(e.getX(), e.getY(), midx, midy) > Math.max(mainCircleRadius, Math.max(backCircleRadius, progressRadius))) {
+//             if (startEventSent && mCrollerChangeListener != null) {
+//                 mCrollerChangeListener.onStopTrackingTouch(this);
+//                 startEventSent = false;
+//             }
+//             return super.onTouchEvent(e);
+//         }
 
         if (e.getAction() == MotionEvent.ACTION_DOWN) {
 
